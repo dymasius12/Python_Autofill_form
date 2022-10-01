@@ -2,7 +2,7 @@
 
 ## using Python and Selenium
 
-<p align="justify"> Hi this is code for automating filling a personal identity form. Good to automate things
+<p align="justify"> Hi this is code for automating filling a personal identity form. Good to automate things. This is the code for the tutorial by Frank Andrade https://www.youtube.com/watch?v=LQ0r_vsdqQw&t=60s
 
 ### Some Important notes:
 
@@ -30,3 +30,4 @@ python automate_form.py
 
 https://chromedriver.chromium.org/
 https://www.selenium.dev/documentation/
+https://www.youtube.com/watch?v=LQ0r_vsdqQw&t=60s
