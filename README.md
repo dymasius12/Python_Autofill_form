@@ -8,6 +8,9 @@
 
 - Please know that I use python venv while doing this. There might be differences with your installed library. Although this project is straighforward, it should not cause much issue.
 - All you need for the dependencies library is in the requirements.txt
+- if you want to use, please make sure you use your own google form link. Otherwise it will not work
+- if you want to use, please make sure you use your own chrome drive path
+- make sure to know if your chrome version is compatible with your chromedriver version. otherwise, it will introduce error! 
 
 ### How to install:
 
@@ -20,7 +23,7 @@ $ pip install -r requirements.txt
 PLEASE NOTE: it needs 1 command after the filename!
 
 ```
-Run it in jupyter notebook
+python automate_form.py
 ```
 
 ### More references:
