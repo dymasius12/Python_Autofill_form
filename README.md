@@ -1,8 +1,8 @@
 # Python_Autofill_form
 
-## using Python, Jupyter Notebook, Pandas, Numpy
+## using Python and Selenium
 
-<p align="justify"> Hi this is code for the assignment 1 from Citizen Data Scientist Program Batch 3
+<p align="justify"> Hi this is code for automating filling a personal identity form. Good to automate things
 
 ### Some Important notes:
 
@@ -25,8 +25,5 @@ Run it in jupyter notebook
 
 ### More references:
 
-https://pandas.pydata.org/docs/index.html
-https://docs.python.org/3/library/math.html
-https://matplotlib.org/cheatsheets/
-https://matplotlib.org/3.6.0/index.html
-https://numpy.org/doc/1.23/
+https://chromedriver.chromium.org/
+https://www.selenium.dev/documentation/
