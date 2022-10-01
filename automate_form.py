@@ -11,9 +11,6 @@ driver = webdriver.Chrome(service=service)
 driver.get(website)
 time.sleep(3)
 
-# inputing the value for the find_element
-value_input = '//div[contains(@data-params, "Address")]//input | //div[contains(@data-params, "Address")]//textarea'
-value_submit = '//div[@role="button"]//span[text()="Submit"]'
 
 # Reading the data from fake data
 import pandas as pd
@@ -25,15 +22,17 @@ number_of_row = len(df)
 
 for i in range(0, number_of_row):
     for column in df.columns:
-        print(column)
-        print(df.loc[i, column])
+        # Basically trying to find the element
 
+        # inputing the value for the find_element
+        value_input = f'//div[contains(@data-params, "{column}")]//input | //div[contains(@data-params, "{column}")]//textarea'
+        value_submit = f'//div[@role="button"]//span[text()="Submit"]'
 
-# Basically trying to find the element
-text_input = driver.find_element(by='xpath', value=value_input)
-text_input.send_keys('Hello_World!')
+        text_input = driver.find_element(by='xpath', value=value_input)
+        text_input.send_keys(df.loc[i, column])
 
-submit_button = driver.find_element(by='xpath', value=value_submit)
-submit_button.click()
+    #Clicking the submit button
+    submit_button = driver.find_element(by='xpath', value=value_submit)
+    submit_button.click()
 
 driver.quit()
